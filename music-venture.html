@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Venture · prototipo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Lobster&family=Righteous&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/songs.js"></script>
+    <script defer src="assets/js/songs-easy.js"></script>
+    <script defer src="assets/js/songs-medium.js"></script>
+    <script defer src="assets/js/songs-iceberg.js"></script>
+    <script defer src="assets/js/game.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Music Venture</h1>
+        <span id="lv"></span>
+      </header>
+
+      <section id="home">
+        <h2>Escucha, adivina, aguanta el reloj.</h2>
+        <p>
+          Tienes 1:00. Cada acierto en los primeros 20 niveles suma segundos.
+          El bonus de artista llega tras acertar 3 canciones seguidas, luego 2
+          más y después 5, 5 y 5. Si fallas, se reinicia el conteo actual sin
+          reiniciar el nivel; el bonus puede aparecer en cualquier nivel al
+          completar el conteo. En el bonus adivinas el artista de cada canción.
+          Antes de empezar hay una cuenta regresiva de 3 segundos. Las opciones
+          aparecen 1 segundo antes de sonar la pista. Una opción
+          incorrecta desaparece cada 3 segundos; a los 15 segundos, si no
+          respondes, cuenta como error. Si el reloj llega a cero, la pregunta
+          actual termina cuando se vacían las barras azules. Una respuesta
+          incorrecta corta la racha. Terminas si
+          se acaba el tiempo, si fallas 5 veces seguidas o si llegas a 10 errores.
+          Del nivel 21 en adelante, el fondo del iceberg: sin segundos extra
+          por acierto y con las alternativas más revueltas entre todos los
+          niveles; los bonus de artista siguen según los aciertos.
+        </p>
+        <div class="row">
+          <button class="big" id="go">Empezar</button>
+        </div>
+        <p id="best"></p>
+      </section>
+
+      <section id="game" hidden>
+        <div id="countdown" hidden role="status" aria-live="assertive"></div>
+        <div class="stage">
+          <div class="rec" id="rec">
+            <div class="track-meter" id="track-meter" aria-hidden="true">
+              <span class="meter-tube"><i class="meter-fill" id="meter-left"></i></span>
+              <span class="meter-tube"><i class="meter-fill" id="meter-right"></i></span>
+            </div>
+            <svg viewBox="0 0 220 220">
+              <circle cx="110" cy="110" r="100" stroke="#5a3f82"></circle>
+              <circle id="ring" cx="110" cy="110" r="100"></circle>
+            </svg>
+            <div class="disc"></div>
+            <div class="tm" id="tm">1:00</div>
+          </div>
+          <div class="side">
+            <div id="lights">
+              <i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div id="score">0</div>
+            <div id="err"></div>
+            <p id="msg"></p>
+          </div>
+        </div>
+        <div id="card" hidden></div>
+        <div id="opts"></div>
+      </section>
+
+      <section id="end" hidden>
+        <h2 id="fin" aria-live="assertive"></h2>
+        <p id="why"></p>
+        <h3 id="songs-title">Canciones de la partida</h3>
+        <ul id="songs"></ul>
+        <div class="row">
+          <button class="big" id="again">Jugar de nuevo</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
