@@ -65,6 +65,15 @@ marcas pertenecen a sus respectivos dueños. El proyecto no aloja ni distribuye
 audio, y el uso de la API de iTunes está sujeto a los términos de Apple.
 El arte y el nombre son propios.
 
+## Cómo ayudar 
+
+MusicVenture es un proyecto de fans amigable con la comunidad. Puedes ayudar de las siguientes maneras: 
+- **Sugiriendo canciones:** abre un problema con `Título | Artista` y el nivel al que crees que pertenece (fácil, medio o iceberg).
+- **Informando audio roto:** dinos qué canción no se reproduce o reproduce la versión incorrecta.
+- **Probando:** pruébalo en tu navegador o teléfono e informa de los errores.
+- **Traduciendo** la interfaz o **diseñando** ilustraciones originales.
+- **Programando:** revisa los problemas etiquetados como `buen primer problema`. Todo…
+
 ## ENGLISH
 
 # MusicVenture
@@ -132,3 +141,15 @@ or endorsed by MetroGames; the creators of the original game *Music Challenge* o
 platform or record label. Song titles, artist names and trademarks belong to
 their respective owners. The project does not host or distribute audio, and use
 of the iTunes API is subject to Apple's terms. The name and artwork are original.
+
+## How to help
+
+MusicVenture is a community-friendly fan project. You can help by:
+
+- **Suggesting songs:** open an issue with `Title | Artist` and the tier you think it belongs to (easy, medium or iceberg).
+- **Reporting broken audio:** tell us which song doesn't play or plays the wrong version.
+- **Testing:** try it on your browser or phone and report bugs.
+- **Translating** the interface or **designing** original artwork.
+- **Coding:** check the issues tagged `good first issue`.
+
+All contributions are welcome. Please keep suggestions to songs and original artwork.
